@@ -14,48 +14,37 @@
 <body>
     <!---HEADER INDEX --->
     <header>
-        <div class="titulo">
-            <h1>FAQDAD</h1>
-        </div>
-        <nav class="navbar__primero">
-            <div class="nav__logo">
-                <img src="./../img/logo2.png" alt="logo" class="logo">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./../img/logo2.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./remeras.html">Remeras</a></li>
+                        <li><a class="dropdown-item" href="#">Buzos</a></li>
+                        <li><a class="dropdown-item" href="#">Cargos</a></li>
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
             </div>
-            <label for="search">
-                <input id="search" type="search" name="search" placeholder="¿Qué estás buscando?">
-            </label>
-            <div class="iconos">
-                <div class="iconos__descripcion">
-                    <i class="fa-solid fa-user"></i>
-                    <span>
-                        <a href="./inicioSesion.html">Entrar</a>
-                    </span>
-                </div>
-                <div class="iconos__descripcion">
-                    <i class="fa-solid fa-message"></i>
-                    <span>Ayuda</span>
-                </div>
-                <div class="iconos__descripcion">
-                    <i class="fa-solid fa-circle-info"></i>
-                    <span>
-                        <a href="./nosotros.html">Nosotros</a>
-                    </span>
-                </div>
-            </div>
-        </nav>
-        <nav class="navbar__segundo">
-            <ul class="navbar__ul">
-                <li class="navbar__li">
-                    <a href="./../index.html">INICIO</a>
-                </li>
-                <li class="navbar__li">
-                    <a href="./productos.html">PRODUCTOS</a>
-                </li>
-                <li class="navbar__li">
-                    <a href="./contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
+            </nav>
     </header>
 
     <main class="main__productos">
@@ -64,21 +53,18 @@
                 <img src="./../img/zapatilla-card.png" alt="">
                 <div class="texto__oculto">
                     <h5>Zapatillas</h5>
-                    <p>Todos los modelos, las mejores marcas</p>
                 </div>
             </div>
             <div class="card__articulo">
                 <img src="./../img/cargo-card.png" alt="">
                 <div class="texto__oculto">
                     <h5>Cargos</h5>
-                    <p>Los cargos más comodos y de mejor calidad, obviamente oversize</p>
                 </div>
             </div>
                 <div class="card__articulo">
                     <img src="./../img/buzo-card.png" alt="">
                     <div class="texto__oculto">
                         <h5>Buzos</h5>
-                        <p>Talles eXXtra grande, como te gustan</p>
                     </div>
                 </div>
                 <div class="card__articulo">
@@ -86,7 +72,7 @@
                     <img src="./../img/remera-card.png" alt="">
                     <div class="texto__oculto">
                         <h5>Remeras</h5>
-                        <p>Si son oversizes, son cómodas</p>
+
                     </div>
                     </a>
                 </div>
