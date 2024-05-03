@@ -451,16 +451,13 @@ textarea {
 
 /*----- INICIO DE NOSOTROS.HTML ------*/
 
-.grid__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr;
-    margin: 40px 200px;
+.container__nosotros {
+    height: 100%;
     column-gap: 20px;
+    padding: 100px;
 }
 
 .grid-hijo h2 {
-    text-align: center;
     font-weight: 700;
 }
 
@@ -480,6 +477,8 @@ float: left;
 margin-right: 1rem;
 
 }
+
+
 
 
 
@@ -574,25 +573,15 @@ margin-right: 1rem;
 
 /*-MEDIA QUERY RESPONSIVE -*/
 
-@media (max-width: 1200px) {
-    /*- ELEMENTOS PRODUCTO -*/
-    .contenedor__productos-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-}
-
 
 @media (max-width: 1024px) { /*- TABLET -*/
-    /*- ELEMENTOS PRODUCTO -*/
+    /*- ELEMENTOS REMERAS BUZOS Y CARGOS HTML -*/
+
     .contenedor__productos-grid {
         grid-template-columns: 1fr 1fr;
     }
 
-    /*- ELEMENTOS NOSOTROS.HTML -*/
-    .grid__container {
-        grid-template-columns: 1fr;
-    }
+
 }
 
 @media (max-width: 768px) { /*- MOBILE -*/
@@ -615,23 +604,6 @@ margin-right: 1rem;
     }
 
     /*- ELEMENTOS INDEX -*/
-    #search {
-        display: none;
-    }
-
-    .caja__footer-flex {
-        display: flex;
-        flex-direction: column;
-    }
-
-    /*- ELEMENTOS REMERAS.HTML -*/
-
-    .contenedor__productos-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /*---ELEMENTOS PRODUCTOS.HTML---*/
-
     .cards__elegir-producto {
         flex-direction: column;
         margin: 50px auto;
@@ -639,6 +611,19 @@ margin-right: 1rem;
     
     .card__articulo {
         margin: 10px;
+    
     }
+
+    .caja__footer-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*- ELEMENTOS REMERAS BUZOS Y CARGOS HTML -*/
+
+    .contenedor__productos-grid {
+        grid-template-columns: 1fr;
+    }
+
 
     }
