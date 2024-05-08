@@ -1,0 +1,78 @@
+.main-producto {
+    h3 {
+        text-align: center;
+        font-weight: 700;
+        margin: 25px auto;
+    }
+    .contenedor__productos-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 25px ;
+        .productos__celda {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            transition: 0.5s;
+            &:hover {
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            }
+            img {
+                width: 100%;
+                height: 375px;
+                object-fit: contain;
+            }
+            .descripcion__del__producto {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .botones__producto {
+                display: flex;
+                flex-direction: row;
+                .btn-comprar {
+                    padding: 10px 30px;
+                    border-radius: 50px;
+                    background-color: #1E1E1E;
+                    color: white;
+                    text-transform: uppercase;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 10px;
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 500;
+                    margin-right: 20px;
+                }
+                .btn-ver {
+                    padding: 10px 30px;
+                    border-radius: 50px;
+                    background-color: white;
+                    color: black;
+                    text-transform: uppercase;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 10px;
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 500;
+                }
+                
+            }
+            .descuento {
+                background-color: rgb(141, 30, 30);
+                color: white;
+                position: absolute;
+                border-radius: 50px;
+                top: 30px;
+                left: 30px;
+                width: 55px;
+                height: 55px;
+                text-align: center;
+                font-weight: 600;
+            }
+        }
+        
+    }
+    
+}

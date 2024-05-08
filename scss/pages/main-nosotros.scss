@@ -1,0 +1,25 @@
+.container__nosotros {
+    height: 100%;
+    column-gap: 20px;
+    padding: 100px;
+    .row{
+        .grid-hijo {
+            h2 {
+                font-weight: 700;
+            }
+            p {
+                margin: 0px 0px 10px;
+                text-align:justify;
+            }
+            b { 
+                text-decoration: underline 3px solid yellow;
+            }
+            .letra__uno::first-letter { 
+                font-size: 6rem;
+                color: black;
+                float: left;
+                margin-right: 1rem;
+                }
+        }
+    }
+}

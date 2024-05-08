@@ -1,5 +1,48 @@
-@media (max-width: 768px) {
-    .caja__footer-flex {
+@media (max-width: 1024px) { // TABLET
+    // MQ PRODUCTOS
+    .main-producto .contenedor__productos-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+
+
+@media (max-width: 768px) { //MOBILE
+    // MQ INDEX HTML
+
+    .main__index .cards__elegir-producto {
+        flex-direction: column;
+        margin: 50px auto;
+        .card__articulo {
+            margin: 10px;
+        }
+    }
+
+    // MQ INICIO SESION HTML
+    .login__contenedor .mitad__uno {
+        width: 0%;
+        .login__contenedor .mitad__uno img {
+            display: none;
+        }
+    }
+
+    .login__contenedor .mitad__dos {
+        width: 100%;
+        background-color: rgb(252, 255, 171);
+    }
+    .login__contenedor .mitad__dos form label input {
+        width: 100%;
+    }
+
+    // MQ PRODUCTOS HTML 
+    .main-producto .contenedor__productos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    // FOOTER GENERAL
+
+    footer .caja__footer-flex {
         display: flex;
         flex-direction: column;
     }

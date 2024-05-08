@@ -174,6 +174,231 @@ header .carousel-inner img {
   cursor: pointer;
 }
 
+.contacto__contenedor {
+  display: block;
+  margin: 0 auto;
+}
+.contacto__contenedor h2 {
+  color: black;
+  font-size: 30px;
+  margin-top: 30px;
+  text-align: center;
+  font-weight: 700;
+  display: block;
+  margin: 20px auto;
+}
+.contacto__contenedor form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contacto__contenedor form label {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 15px auto;
+  align-items: center;
+}
+.contacto__contenedor form label input {
+  width: 32vw;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid;
+  outline: none;
+  padding: 10px;
+}
+.contacto__contenedor form label input:focus {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 4px solid yellow;
+}
+.contacto__contenedor form label textarea {
+  display: block;
+  resize: none;
+  width: 32vw;
+  border-radius: 10px;
+  border: 1px solid black;
+  outline: none;
+  padding: 10px;
+}
+.contacto__contenedor form label textarea:focus {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 4px solid yellow;
+}
+.contacto__contenedor form button {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 20px 90px;
+  border-radius: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  border: 1px solid white;
+  margin: 0 0 20px 0;
+}
+
+.login__contenedor {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+.login__contenedor .mitad__uno {
+  width: 40%;
+}
+.login__contenedor .mitad__uno img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.login__contenedor .mitad__dos {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ebebeb;
+}
+.login__contenedor .mitad__dos h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.login__contenedor .mitad__dos form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login__contenedor .mitad__dos form label {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+.login__contenedor .mitad__dos form label input {
+  display: block;
+  width: 20vw;
+  border-radius: 10px;
+  border: 2px solid black;
+  outline: none;
+  padding: 10px;
+  margin: 0 auto;
+}
+.login__contenedor .mitad__dos form p {
+  text-align: center;
+  margin-top: 20px;
+}
+.login__contenedor .mitad__dos form button {
+  background-color: black;
+  color: white;
+  padding: 20px 70px;
+  border-radius: 40px;
+  font-family: "Montserrat", sans-serif;
+  margin: 2em auto;
+}
+
+.container__nosotros {
+  height: 100%;
+  column-gap: 20px;
+  padding: 100px;
+}
+.container__nosotros .row .grid-hijo h2 {
+  font-weight: 700;
+}
+.container__nosotros .row .grid-hijo p {
+  margin: 0px 0px 10px;
+  text-align: justify;
+}
+.container__nosotros .row .grid-hijo b {
+  text-decoration: underline 3px solid yellow;
+}
+.container__nosotros .row .grid-hijo .letra__uno::first-letter {
+  font-size: 6rem;
+  color: black;
+  float: left;
+  margin-right: 1rem;
+}
+
+.main-producto h3 {
+  text-align: center;
+  font-weight: 700;
+  margin: 25px auto;
+}
+.main-producto .contenedor__productos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 25px;
+}
+.main-producto .contenedor__productos-grid .productos__celda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: 0.5s;
+}
+.main-producto .contenedor__productos-grid .productos__celda:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.main-producto .contenedor__productos-grid .productos__celda img {
+  width: 100%;
+  height: 375px;
+  object-fit: contain;
+}
+.main-producto .contenedor__productos-grid .productos__celda .descripcion__del__producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-producto .contenedor__productos-grid .productos__celda .botones__producto {
+  display: flex;
+  flex-direction: row;
+}
+.main-producto .contenedor__productos-grid .productos__celda .botones__producto .btn-comprar {
+  padding: 10px 30px;
+  border-radius: 50px;
+  background-color: #1E1E1E;
+  color: white;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-right: 20px;
+}
+.main-producto .contenedor__productos-grid .productos__celda .botones__producto .btn-ver {
+  padding: 10px 30px;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.main-producto .contenedor__productos-grid .productos__celda .descuento {
+  background-color: rgb(141, 30, 30);
+  color: white;
+  position: absolute;
+  border-radius: 50px;
+  top: 30px;
+  left: 30px;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  font-weight: 600;
+}
+
 footer {
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -229,8 +454,36 @@ footer .copyright p {
   height: 100px;
 }
 
+@media (max-width: 1024px) {
+  .main-producto .contenedor__productos-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 @media (max-width: 768px) {
-  .caja__footer-flex {
+  .main__index .cards__elegir-producto {
+    flex-direction: column;
+    margin: 50px auto;
+  }
+  .main__index .cards__elegir-producto .card__articulo {
+    margin: 10px;
+  }
+  .login__contenedor .mitad__uno {
+    width: 0%;
+  }
+  .login__contenedor .mitad__uno .login__contenedor .mitad__uno img {
+    display: none;
+  }
+  .login__contenedor .mitad__dos {
+    width: 100%;
+    background-color: rgb(252, 255, 171);
+  }
+  .login__contenedor .mitad__dos form label input {
+    width: 100%;
+  }
+  .main-producto .contenedor__productos-grid {
+    grid-template-columns: 1fr;
+  }
+  footer .caja__footer-flex {
     display: flex;
     flex-direction: column;
   }
