@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header h1 {
+  color: black;
+  background-color: rgb(255, 255, 106);
+  margin-bottom: 0;
+  font-size: 14px;
+  text-align: center;
+  padding: 5px;
+}
+header .bg-dark {
+  background-color: rgb(0, 0, 0) !important;
+}
+header .bg-dark .container-fluid .navbar-brand img {
+  width: 100%;
+  height: 100px;
+}
+header .bg-dark .container-fluid .navbar-toggler {
+  background-color: white !important;
+}
+header .bg-dark .container-fluid .collapse {
+  justify-content: center;
+  align-items: center;
+}
+header .bg-dark .container-fluid .collapse .navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .bg-dark .container-fluid .collapse .navbar-nav .nav-link {
+  color: white;
+}
+header .bg-dark .container-fluid .collapse .navbar-nav .nav-link:hover {
+  color: rgb(246, 255, 0);
+}
+header .carousel-inner img {
+  width: 100%;
+  height: 60vh;
+  object-fit: fill;
+}
+
+.main__index .titulo__h2-drop {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin: 20px 0px 0px;
+  font-weight: 700;
+}
+.main__index .cards__elegir-producto {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+}
+.main__index .cards__elegir-producto img:hover {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+.main__index .cards__elegir-producto .card__articulo {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+  cursor: crosshair;
+}
+.main__index .cards__elegir-producto .card__articulo a:hover {
+  cursor: crosshair;
+}
+.main__index .cards__elegir-producto .card__articulo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+.main__index .cards__elegir-producto .card__articulo .texto__oculto {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(39, 37, 37, 0.7);
+  transition: 0.5s ease;
+  opacity: 0;
+  visibility: visible;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__index .cards__elegir-producto .card__articulo .texto__oculto h5 {
+  color: rgb(228, 228, 228);
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: 0.5s ease;
+}
+.main__index .cards__elegir-producto .card__articulo .texto__oculto:hover {
+  opacity: 1;
+  visibility: visible;
+}
+.main__index .ofertas__contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  padding: 75px;
+}
+.main__index .ofertas__contenedor h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+.main__index .ofertas__contenedor p {
+  text-align: center;
+  margin: 40px;
+}
+.main__index .ofertas__contenedor label {
+  display: flex;
+}
+.main__index .ofertas__contenedor input {
+  width: 40vw;
+  height: 50px;
+  padding: 10px;
+  font-size: 0.9em;
+  border: 1px solid black;
+  border-radius: 15px;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+.main__index .seguinos__contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3em auto;
+}
+.main__index .seguinos__contenedor div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.main__index .seguinos__contenedor div i {
+  font-size: 35px;
+  margin: 0 10px 10px 0;
+}
+.main__index .seguinos__contenedor div h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.main__index .seguinos__contenedor p {
+  text-align: center;
+}
+.main__index .seguinos__contenedor button {
+  font-size: 11px;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid black;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+footer img {
+  width: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  background-color: rgb(30, 29, 29);
+  border-radius: 50%;
+}
+footer .caja__footer-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .caja__footer-flex div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+footer .caja__footer-flex div h3 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+footer .caja__footer-flex div .ul__footer {
+  list-style: none;
+  padding: 0;
+}
+footer .caja__footer-flex div .ul__footer .ul__footer a:hover {
+  color: #9c9999;
+}
+footer .caja__footer-flex div .ul__footer li {
+  text-align: center;
+}
+footer .caja__footer-flex div .ul__footer li a {
+  color: #1E1E1E;
+  text-decoration: none;
+}
+footer .caja__footer-flex .ul__redes {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  font-size: 20px;
+}
+footer .copyright {
+  background-color: black;
+}
+footer .copyright p {
+  color: white;
+  margin: 0;
+  height: 100px;
+}
+
+@media (max-width: 768px) {
+  .caja__footer-flex {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
