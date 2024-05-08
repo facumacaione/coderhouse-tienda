@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -429,7 +430,7 @@ footer .caja__footer-flex div .ul__footer {
   list-style: none;
   padding: 0;
 }
-footer .caja__footer-flex div .ul__footer .ul__footer a:hover {
+footer .caja__footer-flex div .ul__footer a:hover {
   color: #9c9999;
 }
 footer .caja__footer-flex div .ul__footer li {
