@@ -9,11 +9,9 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 25px ;
+        margin-bottom: 20px;
         .productos__celda {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex(column, center, center);
             position: relative;
             transition: 0.5s;
             &:hover {
@@ -33,43 +31,15 @@
                 display: flex;
                 flex-direction: row;
                 .btn-comprar {
-                    padding: 10px 30px;
-                    border-radius: 50px;
-                    background-color: #1E1E1E;
-                    color: white;
-                    text-transform: uppercase;
-                    outline: none;
-                    cursor: pointer;
-                    font-size: 10px;
-                    font-family: "Montserrat", sans-serif;
-                    font-weight: 500;
-                    margin-right: 20px;
+                    @extend %estilos-boton_comprar;
                 }
                 .btn-ver {
-                    padding: 10px 30px;
-                    border-radius: 50px;
-                    background-color: white;
-                    color: black;
-                    text-transform: uppercase;
-                    outline: none;
-                    cursor: pointer;
-                    font-size: 10px;
-                    font-family: "Montserrat", sans-serif;
-                    font-weight: 500;
+                    @extend %estilos-boton_ver;
                 }
                 
             }
             .descuento {
-                background-color: rgb(141, 30, 30);
-                color: white;
-                position: absolute;
-                border-radius: 50px;
-                top: 30px;
-                left: 30px;
-                width: 55px;
-                height: 55px;
-                text-align: center;
-                font-weight: 600;
+                @extend %estilos-descuento;
             }
         }
         

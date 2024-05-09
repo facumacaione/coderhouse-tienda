@@ -9,6 +9,46 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.main-producto .contenedor__productos-grid .productos__celda .botones__producto .btn-ver {
+  padding: 10px 30px;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.main-producto .contenedor__productos-grid .productos__celda .botones__producto .btn-comprar {
+  padding: 10px 30px;
+  border-radius: 50px;
+  background-color: #1E1E1E;
+  color: white;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.main-producto .contenedor__productos-grid .productos__celda .descuento {
+  background-color: rgb(141, 30, 30);
+  color: white;
+  position: absolute;
+  border-radius: 50px;
+  top: 30px;
+  left: 30px;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  font-weight: 600;
+}
+
 header h1 {
   color: black;
   background-color: rgb(255, 255, 106);
@@ -18,7 +58,7 @@ header h1 {
   padding: 5px;
 }
 header .bg-dark {
-  background-color: rgb(0, 0, 0) !important;
+  background-color: black !important;
 }
 header .bg-dark .container-fluid .navbar-brand img {
   width: 100%;
@@ -40,7 +80,7 @@ header .bg-dark .container-fluid .collapse .navbar-nav .nav-link {
   color: white;
 }
 header .bg-dark .container-fluid .collapse .navbar-nav .nav-link:hover {
-  color: rgb(246, 255, 0);
+  color: yellow;
 }
 header .carousel-inner img {
   width: 100%;
@@ -112,9 +152,9 @@ header .carousel-inner img {
 }
 .main__index .ofertas__contenedor {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: black;
   color: white;
   padding: 75px;
@@ -150,8 +190,8 @@ header .carousel-inner img {
 .main__index .seguinos__contenedor div {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .main__index .seguinos__contenedor div i {
   font-size: 35px;
@@ -336,6 +376,7 @@ header .carousel-inner img {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 25px;
+  margin-bottom: 20px;
 }
 .main-producto .contenedor__productos-grid .productos__celda {
   display: flex;
@@ -362,44 +403,6 @@ header .carousel-inner img {
   display: flex;
   flex-direction: row;
 }
-.main-producto .contenedor__productos-grid .productos__celda .botones__producto .btn-comprar {
-  padding: 10px 30px;
-  border-radius: 50px;
-  background-color: #1E1E1E;
-  color: white;
-  text-transform: uppercase;
-  outline: none;
-  cursor: pointer;
-  font-size: 10px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  margin-right: 20px;
-}
-.main-producto .contenedor__productos-grid .productos__celda .botones__producto .btn-ver {
-  padding: 10px 30px;
-  border-radius: 50px;
-  background-color: white;
-  color: black;
-  text-transform: uppercase;
-  outline: none;
-  cursor: pointer;
-  font-size: 10px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-}
-.main-producto .contenedor__productos-grid .productos__celda .descuento {
-  background-color: rgb(141, 30, 30);
-  color: white;
-  position: absolute;
-  border-radius: 50px;
-  top: 30px;
-  left: 30px;
-  width: 55px;
-  height: 55px;
-  text-align: center;
-  font-weight: 600;
-}
-
 footer {
   background-color: rgba(0, 0, 0, 0.1);
 }
