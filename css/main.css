@@ -50,8 +50,8 @@ body {
 }
 
 header h1 {
-  color: black;
-  background-color: rgb(255, 255, 106);
+  color: white;
+  background-color: black;
   margin-bottom: 0;
   font-size: 14px;
   text-align: center;
@@ -109,7 +109,7 @@ header .carousel-inner img {
 }
 .main__index .cards__elegir-producto .card__articulo {
   position: relative;
-  width: 350px;
+  width: 370px;
   height: 250px;
   overflow: hidden;
   object-fit: cover;
@@ -385,9 +385,11 @@ header .carousel-inner img {
   align-items: center;
   position: relative;
   transition: 0.5s;
+  padding: 10px;
 }
 .main-producto .contenedor__productos-grid .productos__celda:hover {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transform: scale(1.01);
 }
 .main-producto .contenedor__productos-grid .productos__celda img {
   width: 100%;
@@ -469,6 +471,7 @@ footer .copyright p {
     margin: 50px auto;
   }
   .main__index .cards__elegir-producto .card__articulo {
+    width: 320px;
     margin: 10px;
   }
   .login__contenedor .mitad__uno {

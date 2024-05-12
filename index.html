@@ -11,11 +11,14 @@
     <link rel="stylesheet" href="./css/main.css">
     <!---Link de iconos --->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!---Link de AOS --->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <!---HEADER INDEX --->
     <header>
-        <h1>Tenemos 30% + 6 cuotas sin interés en remeras y buzos ⌛15% OFF adicional en buzos por Tiempo Limitado</h1>
+        <h1>FAQDAD</h1>
         <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html"><img src="./img/logo2.png" alt="logo"></a>
@@ -82,7 +85,7 @@
 
         <section class="main__productos">
             <div class="cards__elegir-producto">
-                <div class="card__articulo">
+                <div class="card__articulo" data-aos="fade-right" data-aos-duration="1000">
                     <a href="./pages/cargos.html">
                     <img src="./img/cargo-card.png" alt="Cargo card">
                     <div class="texto__oculto">
@@ -90,15 +93,15 @@
                     </div>
                     </a>
                 </div>
-                <div class="card__articulo">
+                <div class="card__articulo " data-aos="fade-down" data-aos-duration="1000">
                     <a href="./pages/buzos.html">
-                    <img src="./img/buzo-card.png" alt="Buzo card">
+                    <img src="./img/buzo-card.png" alt="Buzo card" data-aos-duration="1000">
                     <div class="texto__oculto">
                         <h5>Buzos</h5>
                     </div>
                     </a>
                 </div>
-                <div class="card__articulo">
+                <div class="card__articulo" data-aos="fade-left">
                     <a href="./pages/remeras.html">
                     <img src="./img/remera-card.png" alt="Remera card">
                     <div class="texto__oculto">
@@ -165,7 +168,14 @@
         </section>
     </footer>
 
+    <!---Script Bootstrap --->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!---Script AOS --->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

@@ -14,8 +14,10 @@
             @include flex(column, center, center);
             position: relative;
             transition: 0.5s;
+            padding: 10px;
             &:hover {
                 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                transform: scale(1.01);
             }
             img {
                 width: 100%;
