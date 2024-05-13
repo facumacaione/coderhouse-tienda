@@ -3,6 +3,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -435,15 +436,15 @@ footer .caja__footer-flex div .ul__footer {
   list-style: none;
   padding: 0;
 }
-footer .caja__footer-flex div .ul__footer a:hover {
-  color: #9c9999;
-}
 footer .caja__footer-flex div .ul__footer li {
   text-align: center;
 }
 footer .caja__footer-flex div .ul__footer li a {
   color: #1E1E1E;
   text-decoration: none;
+}
+footer .caja__footer-flex div .ul__footer li a:hover {
+  color: #9c9999;
 }
 footer .caja__footer-flex .ul__redes {
   display: flex;

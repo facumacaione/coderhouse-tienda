@@ -24,16 +24,15 @@ footer {
             .ul__footer {
                 list-style: none;
                 padding: 0;
-                a:hover {
-                    color: #9c9999;
-                }
                 li {
                     text-align: center;
                     a {
                         color: #1E1E1E;
                         text-decoration: none;
                     }
-                    
+                    a:hover {
+                        color: #9c9999;
+                    }
                 }
             }
         }
