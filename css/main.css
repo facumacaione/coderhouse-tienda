@@ -88,6 +88,9 @@ header .carousel-inner img {
   object-fit: fill;
 }
 
+.main__index {
+  overflow-x: hidden;
+}
 .main__index .titulo__h2-drop {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
@@ -348,6 +351,7 @@ header .carousel-inner img {
   height: 100%;
   column-gap: 20px;
   padding: 100px;
+  overflow-x: hidden;
 }
 .container__nosotros .row .grid-hijo h2 {
   font-weight: 700;
