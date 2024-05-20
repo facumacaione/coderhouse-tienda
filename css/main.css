@@ -218,26 +218,41 @@ header .carousel-inner img {
   cursor: pointer;
 }
 
-.contacto__contenedor {
-  display: block;
-  margin: 0 auto;
-}
-.contacto__contenedor h2 {
+.main__contacto h2 {
   color: black;
   font-size: 30px;
   margin-top: 30px;
   text-align: center;
   font-weight: 700;
   display: block;
-  margin: 20px auto;
+  margin: auto;
+  background-color: rgb(255, 255, 132);
+  padding: 20px;
 }
-.contacto__contenedor form {
+.main__contacto .contacto__container-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main__contacto .contacto__container-flex div {
+  width: 45vw;
+  height: 100%;
+}
+.main__contacto .contacto__container-flex div img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.main__contacto .contacto__container-flex form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 55vw;
+  height: 100vh;
 }
-.contacto__contenedor form label {
+.main__contacto .contacto__container-flex form label {
   font-size: 15px;
   display: flex;
   flex-direction: column;
@@ -245,36 +260,36 @@ header .carousel-inner img {
   margin: 15px auto;
   align-items: center;
 }
-.contacto__contenedor form label input {
+.main__contacto .contacto__container-flex form label input {
   width: 32vw;
   height: 40px;
   border-radius: 10px;
-  border: 1px solid;
+  border: 2px solid #a7a6a6;
   outline: none;
   padding: 10px;
 }
-.contacto__contenedor form label input:focus {
+.main__contacto .contacto__container-flex form label input:focus {
   border-top: none;
   border-left: none;
   border-right: none;
   border-bottom: 4px solid yellow;
 }
-.contacto__contenedor form label textarea {
+.main__contacto .contacto__container-flex form label textarea {
   display: block;
   resize: none;
   width: 32vw;
   border-radius: 10px;
-  border: 1px solid black;
+  border: 2px solid #a7a6a6;
   outline: none;
   padding: 10px;
 }
-.contacto__contenedor form label textarea:focus {
+.main__contacto .contacto__container-flex form label textarea:focus {
   border-top: none;
   border-left: none;
   border-right: none;
   border-bottom: 4px solid yellow;
 }
-.contacto__contenedor form button {
+.main__contacto .contacto__container-flex form button {
   display: block;
   background-color: black;
   color: white;
@@ -468,6 +483,12 @@ footer .copyright p {
   .main-producto .contenedor__productos-grid {
     grid-template-columns: 1fr 1fr;
   }
+  .contacto__contenedor form label input {
+    width: 50vw;
+  }
+  .contacto__contenedor form label textarea {
+    width: 50vw;
+  }
 }
 @media (max-width: 768px) {
   .main__index .cards__elegir-producto {
@@ -493,6 +514,18 @@ footer .copyright p {
   }
   .main-producto .contenedor__productos-grid {
     grid-template-columns: 1fr;
+  }
+  .main__contacto .contacto__container-flex form label input {
+    width: 50vw;
+  }
+  .main__contacto .contacto__container-flex form label textarea {
+    width: 50vw;
+  }
+  .main__contacto .contacto__container-flex form button {
+    padding: 20px 40%;
+  }
+  .img-contact {
+    display: none;
   }
   footer .caja__footer-flex {
     display: flex;

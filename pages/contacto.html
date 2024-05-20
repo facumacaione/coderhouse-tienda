@@ -54,23 +54,28 @@
             </nav>
     </header>
     <!---MAIN --->
-    <main class="contacto__contenedor">
+    <main class="main__contacto">
         <h2 class="contacto__h2">CONTACTO</h2>
-        <form class="form__flex">
-            <label for="nombre" class="label-form">NOMBRE
-                <input type="text" name="nombre" id="nombre" class="input-form">
-            </label>
-            <label for="email" class="label-form">EMAIL
-                <input type="email" name="email" id="email" class="input-form">
-            </label>
-            <label for="number" class="label-form">TELÉFONO
-                <input type="tel" name="email" id="email" class="input-form">
-            </label>
-            <label for="number" class="label-form">MENSAJE
-                <textarea name="textarea" id="textarea" cols="30" rows="15"></textarea>
-            </label>
-            <button class="button-form">ENVIAR</button>
-        </form>
+        <div class="contacto__container-flex">
+            <div class="img-contact">
+                <img src="./../img/contactoimg.png" alt="Imagen de contacto">
+            </div>
+            <form class="form__flex">
+                <label for="nombre" class="label-form">NOMBRE
+                    <input type="text" name="nombre" id="nombre" class="input-form">
+                </label>
+                <label for="email" class="label-form">EMAIL
+                    <input type="email" name="email" id="email" class="input-form">
+                </label>
+                <label for="number" class="label-form">TELÉFONO
+                    <input type="tel" name="email" id="email" class="input-form">
+                </label>
+                <label for="number" class="label-form">MENSAJE
+                    <textarea name="textarea" id="textarea" cols="30" rows="15"></textarea>
+                </label>
+                <button class="button-form">ENVIAR</button>
+            </form>
+    </div>
 
 
     </main>

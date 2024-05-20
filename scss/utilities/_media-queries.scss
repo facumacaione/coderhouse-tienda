@@ -4,6 +4,14 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    //MQ CONTACTO 
+    .contacto__contenedor form label input {
+        width: 50vw;
+    }
+
+    .contacto__contenedor form label textarea {
+        width: 50vw;
+    }
 
 }
 
@@ -39,6 +47,24 @@
     // MQ PRODUCTOS HTML 
     .main-producto .contenedor__productos-grid {
         grid-template-columns: 1fr;
+    }
+
+    // MQ CONTACTO
+
+    .main__contacto .contacto__container-flex  form label input {
+        width: 50vw;
+    }
+
+    .main__contacto .contacto__container-flex  form label textarea {
+        width: 50vw;
+    }
+
+    .main__contacto .contacto__container-flex  form button {
+        padding: 20px 40%;
+    }
+
+    .img-contact {
+        display: none;
     }
 
     // FOOTER GENERAL
