@@ -80,8 +80,12 @@ header .bg-dark .container-fluid .collapse .navbar-nav .nav-link {
   color: white;
   font-weight: 500;
   text-align: center;
+  font-size: 14.5px;
   letter-spacing: 0.1px;
   text-transform: uppercase;
+}
+header .bg-dark .container-fluid .collapse .navbar-nav .nav-link:hover {
+  box-shadow: 0 4px 0 0 white;
 }
 header .bg-dark .container-fluid .collapse .navbar-nav .nav-link:hover {
   color: yellow;
@@ -222,15 +226,18 @@ header .carousel-inner img {
   cursor: pointer;
 }
 
+.main__contacto {
+  background: linear-gradient(to bottom, #f3f3f3, rgba(17, 17, 17, 0.4274509804));
+}
 .main__contacto h2 {
   color: black;
-  font-size: 30px;
+  font-size: 20px;
   margin-top: 30px;
   text-align: center;
   font-weight: 700;
   display: block;
   margin: auto;
-  background-color: rgb(255, 255, 132);
+  background-color: rgb(255, 255, 135);
   padding: 20px;
 }
 .main__contacto .contacto__container-flex {
@@ -263,14 +270,17 @@ header .carousel-inner img {
   text-align: center;
   margin: 15px auto;
   align-items: center;
+  font-weight: 500;
 }
 .main__contacto .contacto__container-flex form label input {
   width: 32vw;
   height: 40px;
   border-radius: 10px;
-  border: 2px solid #a7a6a6;
+  border: 2px solid #000000;
   outline: none;
   padding: 10px;
+  background: linear-gradient(to right, #333, #111);
+  color: white;
 }
 .main__contacto .contacto__container-flex form label input:focus {
   border-top: none;
@@ -278,20 +288,28 @@ header .carousel-inner img {
   border-right: none;
   border-bottom: 4px solid yellow;
 }
+.main__contacto .contacto__container-flex form label input::placeholder {
+  color: yellow;
+}
 .main__contacto .contacto__container-flex form label textarea {
   display: block;
   resize: none;
   width: 32vw;
   border-radius: 10px;
-  border: 2px solid #a7a6a6;
+  border: 2px solid black;
   outline: none;
   padding: 10px;
+  background: linear-gradient(to right, #333, #111);
+  color: white;
 }
 .main__contacto .contacto__container-flex form label textarea:focus {
   border-top: none;
   border-left: none;
   border-right: none;
   border-bottom: 4px solid yellow;
+}
+.main__contacto .contacto__container-flex form label textarea::placeholder {
+  color: yellow;
 }
 .main__contacto .contacto__container-flex form button {
   display: block;
@@ -301,7 +319,7 @@ header .carousel-inner img {
   border-radius: 100px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  border: 1px solid white;
+  border: 1px solid rgb(0, 0, 0);
   margin: 0 0 20px 0;
 }
 

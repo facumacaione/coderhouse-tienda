@@ -1,13 +1,14 @@
 .main__contacto {
+    background: linear-gradient(to bottom, #f3f3f3, #1111116d);
     h2 {
         color: $color-negro;
-        font-size: 30px;
+        font-size: 20px;
         margin-top: 30px;
         text-align: center;
         font-weight: 700;
         display: block;
         margin: auto;
-        background-color: rgb(255, 255, 132);
+        background-color: rgb(255, 255, 135);
         padding: 20px;
     }
     .contacto__container-flex {
@@ -38,18 +39,24 @@
                 text-align: center;
                 margin: 15px auto;
                 align-items: center;
+                font-weight: 500;
                 input {
                     width: 32vw;
                     height: 40px;
                     border-radius: 10px;
-                    border: 2px solid #a7a6a6;
+                    border: 2px solid #000000;
                     outline: none;
                     padding: 10px;
+                    background: linear-gradient(to right, #333, #111);
+                    color: $color-blanco;
                     &:focus {
                         border-top: none;
                         border-left: none;
                         border-right: none;
-                        border-bottom: 4px solid yellow
+                        border-bottom: 4px solid yellow;
+                    }
+                    &::placeholder {
+                        color: yellow;
                     }
                 }
                 textarea {
@@ -57,14 +64,19 @@
                     resize: none;
                     width: 32vw;
                     border-radius: 10px;
-                    border: 2px solid #a7a6a6;
+                    border: 2px solid $color-negro;
                     outline: none;
                     padding: 10px;
+                    background: linear-gradient(to right, #333, #111);
+                    color: $color-blanco;
                     &:focus {
                         border-top: none;
                         border-left: none;
                         border-right: none;
                         border-bottom: 4px solid yellow;
+                    }
+                    &::placeholder {
+                        color: yellow;
                     }
                 }
             }
@@ -76,7 +88,7 @@
                 border-radius: 100px;
                 font-family: "Montserrat", sans-serif;
                 font-size: 14px;
-                border: 1px solid white;
+                border: 1px solid rgb(0, 0, 0);
                 margin: 0 0 20px 0;
             }
             
