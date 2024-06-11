@@ -85,9 +85,20 @@ header .bg-dark .container-fluid .collapse .navbar-nav .nav-link {
   text-transform: uppercase;
 }
 header .bg-dark .container-fluid .collapse .navbar-nav .nav-link:hover {
-  box-shadow: 0 4px 0 0 white;
+  color: yellow;
 }
-header .bg-dark .container-fluid .collapse .navbar-nav .nav-link:hover {
+header .bg-dark .container-fluid .collapse .navbar-nav .dropdown-menu {
+  background-color: #222;
+}
+header .bg-dark .container-fluid .collapse .navbar-nav .dropdown-menu li {
+  text-align: center;
+}
+header .bg-dark .container-fluid .collapse .navbar-nav .dropdown-menu li a {
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.171);
+}
+header .bg-dark .container-fluid .collapse .navbar-nav .dropdown-menu li a:hover {
+  background-color: black;
   color: yellow;
 }
 header .carousel-inner img {
@@ -313,7 +324,7 @@ header .carousel-inner img {
 }
 .main__contacto .contacto__container-flex form button {
   display: block;
-  background-color: black;
+  background: linear-gradient(to left, #333, #111);
   color: white;
   padding: 20px 90px;
   border-radius: 100px;
